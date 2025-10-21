@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Üyelik Formu</title>
+   <link rel="icon" type="image/x-icon" href="../../pics/favicon1.png">
+  <style>
+    body {
+      background-color: #FFEFEA;
+      font-family: 'Monaco', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+   h2 {
+      color:  #8B1C2F;
+      margin-top: 40px;
+  
+      letter-spacing: 2px;
+    }
+
+form {
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 18px;
+}
+    input[type="text"] {
+  width: 300px;     
+  height: 30px;     
+  font-size: 16px;   
+  border-radius: 6px;
+  border: 1px solid #999;
+  padding: 5px 10px; 
+  margin-bottom: 15px;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Nurbanu Polat</h1>
+  <h2>Üyelik Formu</h2>
+<form action="kayitbilg.html" method="get" target="_self">
+  <label for="name"><strong>İsim-Soyisim:</strong></label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="department"><strong>Bölümünüz:</strong></label><br>
+  <input type="text" id="department" name="department"><br>
+  <label for="tarih">Doğum Tarihiniz:</label>
+  <input type="date" id="tarih" name="tarih">
+  <br><br>
+  <input type="submit" value="Kayıt ol">
+</form>
+<br>
+    <a href="index.html">Geri dön</a>
+  </div>
+
+</body>
+</html>
