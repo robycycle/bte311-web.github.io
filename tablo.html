@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ders alani, web tabanli programlama, html, css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Tablolar</title>
+  <link rel="stylesheet" href="tablestyle.css">
+  <style>
+    body {
+      background-color: #FFEFEA;
+      font-family: 'Monaco', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+     .internal-tablo {
+            border-collapse: collapse; 
+            font-family: 'Georgia', serif;
+        }
+        .internal-tablo th {
+            background-color: #8B1C2F; 
+            color: white;
+            padding: 10px;
+            border: 1px solid #ffffff;
+        }
+        .internal-tablo td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .internal-tablo tbody tr:nth-child(even) {
+            background-color: #ffffff; 
+        }
+        .internal-tablo tbody tr:nth-child(odd) {
+            background-color: #ffffff; 
+        }
+       #dersbte {
+         background-color: #ffb9c0;
+         font-weight: bold;
+        }
+        #ders111 {
+         background-color: #cfacaf;
+         font-weight: bold;
+        }
+         #dersegt {
+         background-color: #f7e0e2;
+         font-weight: bold;
+        }
+        #ders454 {
+         background-color: #e6d0d2;
+         font-weight: bold;
+        }
+    </style>
+<table style="width:50%" border="1">
+
+<tbody>
+   <h1>Nurbanu Polat</h1>
+  <h2>CSS Tablolar</h2>   
+  <h2>Inline Tablo</h2>
+    <tr>
+<th>Ders</th>
+<th>Saat</th>
+<th>Pazartesi</th>
+<th>Salı</th>
+<th>Çarşamba</th>
+<th>Perşembe</th>
+<th>Cuma</th>
+</tr>
+
+<tr>
+ <td>1.Ders</td> 
+  <td>8:40-9:30</td>
+  <td rowspan="2">BTE307.01</td>
+  <td></td>
+  <td rowspan="4">BTE311</td>
+  <td rowspan="2">EGT303</td>
+  <td></td>
+</tr>
+   
+   
+<tr>
+ <td>2.Ders</td>
+  <td>9:40-10:30</td>
+  <td></td>
+  <td></td>
+
+</tr>
+   
+   
+<tr>
+  <td>3.Ders</td>
+  <td>10:40-11:30</td>
+  <td></td>
+  <td rowspan="2">EGT304</td>
+  <td></td>
+  <td></td>
+</tr>
+   
+<tr>
+  <td>4.Ders</td>
+  <td>11:40-12:30</td>
+  <td rowspan="2">GKS111</td>
+  <td></td>
+  <td></td>
+</tr>
+   
+<tr>
+ <td>5.Ders</td>
+  <td>12:40-13:30</td>
+   <td></td>
+    <td></td>
+     <td></td>
+      <td></td>
+      
+   </tr>
+   
+   <tr>
+ <td>6.Ders</td>
+  <td>13:40-14:30</td>
+  <td></td>
+  <td rowspan="2">EGT454</td>
+  <td rowspan="2">BTE313</td>
+  <td rowspan="2">EGT350</td>
+  <td></td>
+  </tr>
+   
+   <tr>
+  <td>7.Ders</td>
+  <td>14:40-15:30</td>
+  <td></td>
+  <td></td>
+  </tr>
+   
+   <tr>
+  <td>8.Ders</td>
+  <td>15:40-16:30</td>
+  <td ></td>
+  <td></td>
+  <td rowspan="2">BTE309</td>
+  <td></td>
+  <td></td>
+</tr>
+
+  <tr>
+ <td>9.Ders</td>
+  <td>16:40-17:30</td>
+  <td></td>
+  <td></td>
+  <td></td>
+    <td></td>
+</tr>
+</tbody>
+</table>
+<br>
+
+  <table class="internal-tablo">
+  <tbody>
+   <h1>Nurbanu Polat</h1>
+  <h2>CSS Tablolar</h2>   
+  <h2>Internal Tablo</h2>
+    <tr>
+<th>Ders</th>
+<th>Saat</th>
+<th>Pazartesi</th>
+<th>Salı</th>
+<th>Çarşamba</th>
+<th>Perşembe</th>
+<th>Cuma</th>
+</tr>
+
+<tr>
+ <td>1.Ders</td> 
+  <td>8:40-9:30</td>
+  <td rowspan="2" id="dersbte">BTE307.01</td>
+  <td></td>
+  <td rowspan="4"id="dersbte">BTE311</td>
+  <td rowspan="2" id="dersegt">EGT303</td>
+  <td></td>
+</tr>
+   
+   
+<tr>
+ <td>2.Ders</td>
+  <td>9:40-10:30</td>
+  <td></td>
+  <td></td>
+
+</tr>
+   
+   
+<tr>
+  <td>3.Ders</td>
+  <td>10:40-11:30</td>
+  <td></td>
+  <td rowspan="2" id="dersegt">EGT304</td>
+  <td></td>
+  <td></td>
+</tr>
+   
+<tr>
+  <td>4.Ders</td>
+  <td>11:40-12:30</td>
+  <td rowspan="2"id="ders111" >GKS111</td>
+  <td></td>
+  <td></td>
+</tr>
+   
+<tr>
+ <td>5.Ders</td>
+  <td>12:40-13:30</td>
+   <td></td>
+    <td></td>
+     <td></td>
+      <td></td>
+      
+   </tr>
+   
+   <tr>
+ <td>6.Ders</td>
+  <td>13:40-14:30</td>
+  <td></td>
+  <td rowspan="2" id="ders454">EGT454</td>
+  <td rowspan="2"id="dersbte" >BTE313</td>
+  <td rowspan="2" id="dersegt">EGT350</td>
+  <td></td>
+  </tr>
+   
+   <tr>
+  <td>7.Ders</td>
+  <td>14:40-15:30</td>
+  <td></td>
+  <td></td>
+  </tr>
+   
+   <tr>
+  <td>8.Ders</td>
+  <td>15:40-16:30</td>
+  <td ></td>
+  <td></td>
+  <td rowspan="2" id="dersbte">BTE309</td>
+  <td></td>
+  <td></td>
+</tr>
+
+  <tr>
+ <td>9.Ders</td>
+  <td>16:40-17:30</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+      </table>
+<br>
+  <h2>External Tablo</h2>
+<table class="external-tablo">
+ <tbody>
+ <tr>
+<th>Ders</th>
+<th>Saat</th>
+<th>Pazartesi</th>
+<th>Salı</th>
+<th>Çarşamba</th>
+<th>Perşembe</th>
+<th>Cuma</th>
+</tr>
+
+<tr>
+ <td>1.Ders</td> 
+  <td>8:40-9:30</td>
+  <td rowspan="2" id="dersbte2">BTE307.01</td>
+  <td></td>
+  <td rowspan="4"id="dersbte2">BTE311</td>
+  <td rowspan="2" id="dersegt2">EGT303</td>
+  <td></td>
+</tr>
+   
+   
+<tr>
+ <td>2.Ders</td>
+  <td>9:40-10:30</td>
+  <td></td>
+  <td></td>
+
+</tr>
+   
+   
+<tr>
+  <td>3.Ders</td>
+  <td>10:40-11:30</td>
+  <td></td>
+  <td rowspan="2" id="dersegt2">EGT304</td>
+  <td></td>
+  <td></td>
+</tr>
+   
+<tr>
+  <td>4.Ders</td>
+  <td>11:40-12:30</td>
+  <td rowspan="2"id="ders1112" >GKS111</td>
+  <td></td>
+  <td></td>
+</tr>
+   
+<tr>
+ <td>5.Ders</td>
+  <td>12:40-13:30</td>
+   <td></td>
+    <td></td>
+     <td></td>
+      <td></td>
+      
+   </tr>
+   
+   <tr>
+ <td>6.Ders</td>
+  <td>13:40-14:30</td>
+  <td></td>
+  <td rowspan="2" id="ders4542">EGT454</td>
+  <td rowspan="2"id="dersbte2" >BTE313</td>
+  <td rowspan="2" id="dersegt2">EGT350</td>
+  <td></td>
+  </tr>
+   
+   <tr>
+  <td>7.Ders</td>
+  <td>14:40-15:30</td>
+  <td></td>
+  <td></td>
+  </tr>
+   
+   <tr>
+  <td>8.Ders</td>
+  <td>15:40-16:30</td>
+  <td ></td>
+  <td></td>
+  <td rowspan="2" id="dersbte2">BTE309</td>
+  <td></td>
+  <td></td>
+</tr>
+
+  <tr>
+ <td>9.Ders</td>
+  <td>16:40-17:30</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tbody>
+      </table>
+<br>
+<br>
+    <a href="index.html">Geri dön</a>
+</body>
+</html>

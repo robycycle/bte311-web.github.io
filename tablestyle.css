@@ -1,0 +1,37 @@
+ .external-tablo {
+            border-collapse: collapse; 
+            font-family: 'Georgia', serif;
+        }
+        .external-tablo th {
+            background-color: #761323; 
+            color: white;
+            padding: 10px;
+            border: 1px solid #ffffff;
+        }
+        .external-tablo td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .external-tablo tbody tr:nth-child(even) {
+            background-color: #ffffff; 
+        }
+        .external-tablo tbody tr:nth-child(odd) {
+            background-color: #ffffff; 
+        }
+       #dersbte2 {
+         background-color: #ffb9c0;
+         font-weight: bold;
+        }
+        #ders1112 {
+         background-color: #cfacaf;
+         font-weight: bold;
+        }
+         #dersegt2 {
+         background-color: #f7e0e2;
+         font-weight: bold;
+        }
+        #ders4542 {
+         background-color: #e6d0d2;
+         font-weight: bold;
+        }
