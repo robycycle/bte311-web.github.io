@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animasyonlu Div Ailem</title>
+  <style>
+    body {
+      background-color: #FFEFEA;
+      font-family: 'Monaco', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+   h2 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      letter-spacing: 2px;
+    }
+
+    @keyframes hareket
+    {from 
+        {opacity:0.3;transform: translateX(0);}
+      to
+      {opacity:0.1;transform: translateX(300px);}
+    }
+     @keyframes hareket2
+    {from 
+        {opacity:0.3;transform: translateY(0);}
+      to
+      {opacity:0.1;transform: translateY(300px);}
+    }
+     @keyframes hareket3
+    {from 
+        {opacity:0.3;transform: translateX(30);}
+      to
+      {opacity:0.1;transform: translateY(300px);}
+    }
+
+.dikdortgen{
+  height:250px;
+  width:500px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-left: 70px;
+  z-index: 2;
+  animation-name:hareket2;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen2{
+  height:200px;
+  width:400px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-230px;
+  margin-left: 150px;
+  z-index: 1;
+   animation-name:hareket;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  
+}
+.dikdortgen3{
+  height:200px;
+  width:400px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-100px;
+  margin-left: 300px;
+  z-index: 0 ;
+   animation-name:hareket2;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen4{
+  height:200px;
+  width:400px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-130px;
+  margin-left: 260px;
+  z-index: 9 ;
+   animation-name:hareket;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen5{
+  height:240px;
+  width:500px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-320px;
+  margin-left: 290px;
+  z-index: 3 ;
+   animation-name:hareket2;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen6{
+  height:135px;
+  width:420px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-180px;
+  margin-left: 340px;
+  z-index: 4 ;
+   animation-name:hareket;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen7{
+  height:220px;
+  width:430px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-300px;
+  margin-left: 282px;
+  z-index: 5 ;
+   animation-name:hareket2;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen8{
+  height:135px;
+  width:420px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-430px;
+  margin-left: 340px;
+  z-index: 6 ;
+   animation-name:hareket;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen9{
+  height:270px;
+  width: 340px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-430px;
+  margin-left: 244px;
+  z-index: 7 ;
+   animation-name:hareket2;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+.dikdortgen10{
+  height:135px;
+  width: 421px;
+  background-color: #f36b59;
+  opacity:0.3;
+  margin-top:-390px;
+  margin-left: 557px;
+  z-index: 8 ;
+   animation-name:hareket3;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+  </style>
+</head>
+<body>
+  <h1>Nurbanu Polat</h1>
+  <div class="dikdortgen" >
+  </div>
+  <div class="dikdortgen2"></div>
+  <div class="dikdortgen3"></div>
+  <div class="dikdortgen4"></div>
+  <div class="dikdortgen5"></div>
+  <div class="dikdortgen6"></div>
+  <div class="dikdortgen7"></div>
+  <div class="dikdortgen8"></div>
+  <div class="dikdortgen9"></div>
+  <div class="dikdortgen10"></div>
+  <br>
+   <a href="index.html">Geri dön</a>
+</body>
+</html>
