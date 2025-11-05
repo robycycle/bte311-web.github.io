@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ders alani, web tabanli programlama, html, css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hareketli Yüzler</title>
+  <style>
+    body {
+      background-color: #FFEFEA;
+      font-family: 'Monaco', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .yuz {   
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;
+      margin-left: 20px;
+      margin-top: 100px;
+      border: 2px solid #222020;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff315;
+      animation: asagiyukari 2s infinite alternate;
+    }
+
+    @keyframes asagiyukari {
+          from {top: 180px;}
+    to {top: 50px;}
+    }
+
+
+    .yuz2 {
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;   
+      margin-left: 180px;
+      margin-top: 100px;
+      border: 2px solid #222020;
+      align-items: center;
+      justify-content: center;
+      background-color: #c2dec5;
+      z-index: 1;
+      animation: buyut 2s infinite alternate;
+    }
+
+    @keyframes buyut {
+      from {transform: scale(1);}
+      to {transform: scale(1.2);}
+    }
+
+    .yuz3 {   
+         width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;
+      margin-left: 350px;
+      margin-top: 100px;
+      border: 2px solid #222020;
+      align-items: center;
+      justify-content: center;
+      background-color: #da2a25;
+      animation: opaklik 2s infinite alternate;
+    }
+
+    @keyframes opaklik {
+      from {opacity:1;}
+      to {opacity:0.3;}
+    }
+
+    .yuz4 {  
+         width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;  
+      margin-left: 520px;
+      margin-top: 100px;
+      border: 2px solid #222020;
+      align-items: center;
+      justify-content: center;
+      background-color: #935b33;
+      animation: sagsol 2s infinite alternate;
+      
+    }
+
+    @keyframes sagsol {
+      0% {transform: translateX(0);}
+      100% {transform: translateX(130px);}
+    }
+
+    .yuz5 {   
+      width: 100px; 
+      height: 100px;
+      border-radius: 50%; 
+      position: absolute;
+      margin-left: 770px;
+      margin-top: 100px;
+      border: 2px solid #222020;
+      align-items: center;
+      justify-content: center;
+      background-color: #f08980;
+      animation: dondur 2s infinite alternate;
+    }
+
+    @keyframes dondur {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+
+ img {
+  width: 100px;
+  height: 100px;
+}
+
+
+  </style>
+</head>
+<body>
+<br/><br/>
+<div class="container">
+<br>
+<div class="text-center">
+<h1>Hareketli Yüzler</h1>
+</div>
+<br>
+    <div class="yuz" >
+         <img src="sbob.png" alt="yüz 1" class="yuz-img">
+    </div>
+    <div class="yuz2" >
+    <img src="fire.png" alt="yüz 2" class="yuz-img">
+    </div>
+    <div class="yuz3">
+      <img src="krabs.png" alt="yüz 3" class="yuz-img">
+    </div>
+    <div class="yuz4">
+      <img src="sand.png" alt="yüz 4" class="yuz-img">
+    </div>
+    <div class="yuz5">
+    <img src="pat.png" alt="yüz 5" class="yuz-img">
+    </div>
+    <br>
+    <a href="index.html">Geri dön</a>
+</div>
+</body>
+</html>
