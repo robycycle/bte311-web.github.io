@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ders alani, web tabanli programlama, html, css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Görseller</title>
+  <style>
+    body {
+      font-family: 'Monaco', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    img {
+      display:block;
+      margin: 10px auto;
+      border-radius:150px;
+    }
+
+    .sabit-resimler {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .kutu {
+      text-align: center;
+    }
+
+    .mini {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<br/><br/>
+<div class="container">
+<br>
+<div class="text-center">
+<h1>JavaScript Görseller</h1>
+</div>
+<br>
+
+<div>
+  <img id="randomImage" src="" alt="Rastgele Resim" width="300" height="300">
+
+  <div id="sabitResimler" class="sabit-resimler">
+
+    <div class="kutu">
+        <img class="mini" src="tagyit.png" alt="Sabit 1">
+        <button onclick="document.getElementById('resim').style.display='none'">Gizle</button>
+        <button onclick="document.getElementById('resim').style.display='block'">Göster</button>
+    </div>
+
+    <div class="kutu">
+        <img class="mini" src="milkandcookies.jpg" alt="Sabit 2">
+        <button onclick="document.getElementById('resim').style.display='none'">Gizle</button>
+        <button onclick="document.getElementById('resim').style.display='block'">Göster</button>
+    </div>
+
+    <div class="kutu">
+        <img class="mini" src="cake.png" alt="Sabit 3">
+        <button onclick="document.getElementById('resim').style.display='none'">Gizle</button>
+        <button onclick="document.getElementById('resim').style.display='block'">Göster</button>
+    </div>
+
+  </div>
+</div>
+<br>
+<div>
+    <a href="index.html">Geri dön</a>
+</div>
+
+<script>
+   var resimler = [
+        'cake.png',
+        'carousel.png',
+        'crybaby.jpg',
+        'dollhouse.jpg',
+        'madhatter.png',
+        'pacifyher.png',
+        'milkandcookies.jpg',
+        'tagyit.png',
+        'pityparty.png',
+        'soap.png'
+    ];
+
+    function rastgeleRenk() {
+        var r = Math.floor(Math.random() * 256);
+        var g = Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        return 'rgb(' + r + ',' + g + ',' + b + ')';
+    }
+
+    function rastgeleResimVeRenkGoster() {
+        var randomIndex = Math.floor(Math.random() * resimler.length);
+        var randomImage = resimler[randomIndex];
+        document.getElementById('randomImage').src = randomImage;
+        document.body.style.backgroundColor = rastgeleRenk();
+    }
+window.onload = rastgeleResimVeRenkGoster;
+   
+</script>
+
+</body>
+</html>
