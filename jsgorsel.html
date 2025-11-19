@@ -56,7 +56,7 @@
 <br>
 
 <div>
-  <img id="randomImage" src="" alt="Rastgele Resim" width="300" height="300">
+  <img id="rndpic" src="" alt="Rastgele Resim" width="300" height="300">
 
   <div id="sabitResimler" class="sabit-resimler">
 
@@ -99,20 +99,20 @@
         'soap.png'
     ];
 
-    function rastgeleRenk() {
+    function rndcol() {
         var r = Math.floor(Math.random() * 256);
         var g = Math.floor(Math.random() * 256);
         var b = Math.floor(Math.random() * 256);
         return 'rgb(' + r + ',' + g + ',' + b + ')';
     }
 
-    function rastgeleResimVeRenkGoster() {
+    function rndcolpic() {
         var randomIndex = Math.floor(Math.random() * resimler.length);
-        var randomImage = resimler[randomIndex];
-        document.getElementById('randomImage').src = randomImage;
-        document.body.style.backgroundColor = rastgeleRenk();
+        var rndpic = resimler[randomIndex];
+        document.getElementById('rndpic').src = rndpic;
+        document.body.style.backgroundColor = rndcol();
     }
-window.onload = rastgeleResimVeRenkGoster;
+window.onload = rndcolpic;
    
 </script>
 
