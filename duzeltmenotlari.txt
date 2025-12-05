@@ -1,0 +1,31 @@
+NURBANU POLAT 041
+311 - Adventure Game > My Little Pony Run
+
+DÜZELTME NOTLARI
+
+Görseller: Oyun kodları içerisinde adları değiştirilmeden görsellerin imajları değiştirildi, görsel tema yenilendi ve imaj konumları değiştirildi, eksiltildi.
+
+Sprite Sheet Yapısı: Sprite sheet yapısı kaldırılarak player görselleri sadeleştirildi. Playerın koşma görüntülerinin her karede farklı akması yerine sabit görselin hareket yönüne göre dönmesi şeklinde ayarlandı.
+
+Kaynak Yönetimi: Oyun başlamadan önce tüm görsellerin yüklenmesini sağlamak ve böylece oyunun ilerleyen kısımlarda çökmesinin veya hatalı çalışmasının önüne geçilmiş oldu.
+
+Ana döngü - Fonksiyonlar: Oyunun ana döngüsü farklı fonksiyonlara bölünerek sadeleştirildi.Gerekli kısımlarda bu fonksiyonlar çağrılaak düzenli okunabilir yapı oluşturuldu.
+
+Zıplama Kontrolü: Önceki versiyonunda basit tutulmuş zıplama kontrolleri değiştirilip oyuncunun üst üste basılan zıplama tuşuyla çok daha yükseğe zıplaması engellendi. Bu kontrol yapılırken yalnızca platform üzerinde zıplanılmaması blokların da üzerinden zıplanılabiliyor olduğu gözetildi.
+
+Hata Yönetim Mekanizması: Oyun kodları içerisinde daha fazla hata yönetimi durağı eklendi.
+
+Kazanma ve Kaybetme Mekanizması: Oyuncu kaybettiğinde veya kazandığında tarayıcı üzerinden geri bildirim verilen kodlar eklendi.
+
+Girişteki Hata Düzeltildi: Oyun başlar başlamaz player'ın düşüşü ile başlar başlamaz kaybettiniz çıktısı veriyor olması player'ın başlangıç konumunun değiştirilmesiyle düzeltildi. 
+
+
+EK NOTLAR--------------------
+
+Süreç-> Oyuncu hızını değiştirmeyi hedeflediğimde sorunlarla karşılaştım örneğin player kaybettiği veya kazandığında döngü resetlenmiyor olduğundan hızı katlanarak artıyordu kendi düzeltmelerimden kaynaklanan bir hataydı. Farklı bir hataysa üst üste zıplamaları önlemeye çalıştığımda oyuncu merdiven gibi yukarı ilerleyen engellerde birinci olanın üzerindeyken zıplayamıyordu (düzlemdeyse zıpla şeklinde girilen kod sebebiyle)yine bu da benim değiştirmemden kaynaklanan bir hataydı ve saptayıp değiştirmem zaman aldı. Yalnızca ai desteği ile değil kendi katkım da olsun istediğim için karışık, uzun bir süreç geçirdim. Çoğu noktada yapay zeka desteği aldım ama bir oyunun sahip olması gereken dinamiklerin neler olduğuna yönelik fikrim gelişti.
+
+Yapay Zeka Desteği:
+Kod düzeltmeleri yaparken ChatGPT desteği aldım ve arkaplan görsel üretimim için Gemini görsel oluşturma aracından faydalandım.
+
+Görsel Kaynakça:
+https://cutekawaiiresources.wordpress.com/pixel-gif-images/characters/my-little-pony/
