@@ -1,187 +1,60 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="ders alani, web tabanli programlama, html, css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../indeximg/kyesılkalp.png">
-    <title>Nurbanu Polat 311 Ders Alanım</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Monaco', monospace;
-        }
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ders alani, web tabanli programlama, html, css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nurbanu Polat 311 Ders Alanım</title>
+  <style>
+    body {
+      background-color: #FFEFEA;
+      font-family: 'Monaco', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            background: linear-gradient(to bottom, #FFEFEA, #ffeaea); 
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-            min-height: 100vh;
-            position: relative;
-        }
+    h1 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
 
-        .container {
-            max-width: 900px;
-            width: 100%;
-            z-index: 1; 
-        }
-        
-         header h1 {
-          color: #8B1C2F;
-          margin-top: 40px;
-          font-size: 2rem;
-          letter-spacing: 2px;
-          text-align: center;
-        }
+    h2 {
+      color: #8B1C2F;
+      margin-top: 40px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
 
-        /* AI desteği burda */
-        .timeline {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 25px;
-        }
-
-
-        .card {
-            background: #ffffff99;
-            border-radius: 20px;
-            padding: 25px;
-            display: flex;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-
-        /* AI desteği burda */
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px -5px #d8afafad;
-        }
-
-        .kutu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #8B1C2F;
-            font-size: 1.1rem;
-            background: linear-gradient(135deg, #fff0f0, #fee2e0);
-            padding: 12px 24px;
-            border-radius: 14px;
-            border: 1px solid #d79292;
-        }
-
-        .bkutu {
-            padding-left: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .odev {
-            color: #334155;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 10px 18px;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            border: 1px solid #e2e8f0;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .decoration {
-            position: absolute;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        #cilek {
-          position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 120px;
-            z-index: 3;
-        }
-        #cilek2 {
-          position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 120px;
-            z-index: 4;
-            rotate:-40deg;
-        }
-
-        #cilekkiz {
-            bottom: -50px;
-            margin-left: 10px;
-            width: 440px;
-            z-index: 5;
-        }
-
-    </style>
+  </style>
 </head>
 <body>
-
-    <img src="../indeximg/webcilek1.png" alt="Çilek" id="cilek">
-    <img src="../indeximg/webcilek1.png" alt="Çilek2" id="cilek2">
-    <img src="../indeximg/web2straw.png" alt="Çilek Kız" id="cilekkiz">
-
-    <div class="container">
-        <header>
-            <h1>Nurbanu Polat</h1>
-            <br><br>
-        </header>
-
-        <div class="timeline">
-            
-            <div class="card">
-                    <h1 class="kutu">15.10.25</h1>
-                <div class="bkutu">
-                    <a href="form1.html" class="odev"> Üyelik Formu</a>
-                    <a href="test1.html" class="odev"> Basit Web Quiz</a>
-                </div>
-            </div>
-
-            <div class="card">
-                    <h1 class="kutu">22.10.25</h1>
-                <div class="bkutu">
-                    <a href="venn.html" class="odev">Venn Şeması</a>
-                    <a href="tablo.html" class="odev">CSS Tablolar</a>
-                </div>
-            </div>
-
-            <div class="card">
-                    <h1 class="kutu">05.10.25</h1>
-                <div class="bkutu">
-                    <a href="divanimasyonlu.html" class="odev">Animasyonlu Div Ailem</a>
-                    <a href="hareketliyuzler1.html" class="odev">Hareketli Yüzler</a>
-                </div>
-            </div>
-
-            <div class="card">
-                    <h1 class="kutu">12.11.25</h1>
-                <div class="bkutu">
-                    <a href="melkart.html" class="odev">Kartlar</a>
-                </div>
-            </div>
-
-            <div class="card">
-                    <h1 class="kutu">19.11.25</h1>
-                <div class="bkutu">
-                    <a href="jsgorsel.html" class="odev"> JavaScript Görseller</a>
-                </div>
-            </div>
-
-               <div class="card">
-                    <h1 class="kutu">26.11.25</h1>
-                <div class="bkutu">
-                    <a href="super-lady-game/jsoyun.html" class="odev"> JavaScript Oyun</a>
-                    <a href="super-lady-game benim versiyonum/jsbenim.html" class="odev"> JS Benim Versiyonum</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+  <h1>Nurbanu Polat</h1>
+  <h2>15.10.25</h2>
+  <a href="form1.html">Üyelik formu</a>
+  <br>
+  <a href="test1.html">Basit web quiz</a>
+  <h2>22.10.25</h2>
+  <a href="venn.html">Venn Şeması</a>
+   <br>
+  <a href="tablo.html">CSS Tablolar</a>
+  <br>
+  <h2>05.11.25</h2>
+  <a href="divanimasyonlu.html">Animasyonlu Div Ailem</a>
+  <br>
+  <a href="hareketliyuzler1.html">Hareketli Yüzler</a>
+    <h2>12.11.25</h2>
+  <a href="melkart.html">Kartlar</a>
+  <br>
+   <h2>19.11.25</h2>
+  <a href="jsgorsel.html">JavaScript Görseller</a>
+  <br>
+  <h2>26.11.25</h2>
+  <a href="super-lady-game/jsoyun.html">JavaScript Oyun</a>
+  <br>
+  <a href="super-lady-game benim versiyonum/jsbenim.html">JavaScript Benim Versiyonum</a>
+  <br>
 </body>
 </html>
