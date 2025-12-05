@@ -1,5 +1,3 @@
-// indexn.js - düzeltilmiş, güvenli versiyon
-
 // DOM hazır olunca çalıştırmak için sar
 window.addEventListener("load", () => {
   // canvas seçimi
@@ -399,3 +397,4 @@ const onGround =
     console.log("Oyun başlatıldı. player pozisyon:", player.position);
   });
 });
+
