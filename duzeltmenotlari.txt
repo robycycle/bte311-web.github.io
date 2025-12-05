@@ -15,7 +15,7 @@ Zıplama Kontrolü: Önceki versiyonunda basit tutulmuş zıplama kontrolleri de
 
 Hata Yönetim Mekanizması: Oyun kodları içerisinde daha fazla hata yönetimi durağı eklendi.
 
-Kazanma ve Kaybetme Mekanizması: Oyuncu kaybettiğinde veya kazandığında tarayıcı üzerinden geri bildirim verilen kodlar eklendi.
+Kazanma ve Kaybetme Mekanizması: Oyuncu kaybettiğinde veya kazandığında tarayıcı üzerinden geri bildirim verilen kodlar eklendi. Oyun kazanıldığında da palyer'ın ilk konumuna geri dönmesi eklendi.
 
 Girişteki Hata Düzeltildi: Oyun başlar başlamaz player'ın düşüşü ile başlar başlamaz kaybettiniz çıktısı veriyor olması player'ın başlangıç konumunun değiştirilmesiyle düzeltildi. 
 
@@ -29,3 +29,4 @@ Kod düzeltmeleri yaparken ChatGPT desteği aldım ve arkaplan görsel üretimim
 
 Görsel Kaynakça:
 https://cutekawaiiresources.wordpress.com/pixel-gif-images/characters/my-little-pony/
+
