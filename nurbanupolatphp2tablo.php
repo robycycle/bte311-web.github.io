@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
+    <meta charset="UTF-8">
     <title>Dinamik Tablo Oluşturma</title>
     <style>
         table {
@@ -128,4 +129,5 @@ if (isset($_POST['rows'], $_POST['cols'])) {
 ?>
 
 </body>
+
 </html>
